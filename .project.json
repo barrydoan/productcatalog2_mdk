@@ -7,16 +7,19 @@
 		"Deploy": {
 			"Description": "",
 			"WebClient": {
-				"Runtime": "",
-				"URL": ""
+				"Runtime": "production",
+				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
 			},
 			"Destination": [
 				{
-					"CF": "",
+					"CF": "productcatalog2",
 					"MDK": "productcatalog2",
 					"URL": ""
 				}
-			]
+			],
+			"Name": "ns.ProductCatalog2",
+			"Version": "1.0.0",
+			"AppRouter": "standalone"
 		}
 	},
 	"MobileService": {

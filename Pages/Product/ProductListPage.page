@@ -1,0 +1,63 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.DataTable",
+					"Target": {
+						"Service": "/ProductCatalog2/Services/productcatalog2.service",
+						"EntitySet": "Products",
+						"QueryOptions": "$orderby=name"
+					},
+					"_Name": "SectionDataTable0",
+					"Header": {
+						"_Name": "SectionDataTableHeader0",
+						"UseTopPadding": true,
+						"DataTable": {
+							"Items": [
+								{
+									"Text": ""
+								},
+								{
+									"Text": "Name"
+								}
+							],
+							"Layout": {
+								"ColumnWidth": [
+								]
+							}
+						}
+					},
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Row": {
+						"Items": [
+							{
+								"Text": "{NDC}"
+							},
+							{
+								"Text": "{name}"
+							}
+						],
+						"Layout": {
+							"ColumnWidth": [
+							]
+						}
+					},
+					"DataPaging": {
+						"ShowLoadingIndicator": false,
+						"PageSize": 50
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ProductListPage",
+	"Caption": "ProductListPage",
+	"PrefersLargeCaption": true
+}
