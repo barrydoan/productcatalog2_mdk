@@ -1,0 +1,21 @@
+{
+    "Service": "/ProductCatalog2/Services/productcatalog2.service",
+    "DefiningRequests": [{
+            "Name": "Carts",
+            "Query": "Carts"
+        },
+        {
+            "Name": "Products",
+            "Query": "Products"
+        },
+        {
+            "Name": "CartItems",
+            "Query": "CartItems"
+        }
+    ],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/ProductCatalog2/Actions/Service/SyncFailureMessage.action"
+}

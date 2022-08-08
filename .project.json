@@ -1,0 +1,46 @@
+{
+	"Credential": "cf",
+	"CF": {
+		"Target": "https://api.cf.us10.hana.ondemand.com",
+		"Organization": "1c27ef24-9126-4a09-a257-98026a7a88b9",
+		"Space": "e8f06cfe-0205-4bdd-8c2a-cc7ce982652f",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "",
+				"URL": ""
+			},
+			"Destination": [
+				{
+					"CF": "",
+					"MDK": "productcatalog2",
+					"URL": ""
+				}
+			]
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us10.hana.ondemand.com/cockpit/v1/org/1c27ef24-9126-4a09-a257-98026a7a88b9/space/e8f06cfe-0205-4bdd-8c2a-cc7ce982652f",
+		"AppId": "productcatalog2",
+		"Destination": [
+			"productcatalog2"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=productcatalog2&ClientId=7ac71d4c-d667-4ea2-a7d4-010e8197a51b&ServerUrl=https://7098580dtrial-dev-productcatalog2.cfapps.us10.hana.ondemand.com&SapCloudPlatformEndpoint=https://7098580dtrial-dev-productcatalog2.cfapps.us10.hana.ondemand.com&AuthorizationEndpointUrl=https://7098580dtrial-dev-productcatalog2.cfapps.us10.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://7098580dtrial-dev-productcatalog2.cfapps.us10.hana.ondemand.com&TokenUrl=https://7098580dtrial-dev-productcatalog2.cfapps.us10.hana.ondemand.com/oauth2/api/v1/token"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true
+	}
+}

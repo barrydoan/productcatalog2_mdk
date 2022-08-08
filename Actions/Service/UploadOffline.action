@@ -1,0 +1,9 @@
+{
+    "Service": "/ProductCatalog2/Services/productcatalog2.service",
+    "_Type": "Action.Type.OfflineOData.Upload",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnSuccess": "/ProductCatalog2/Actions/Service/DownloadStartedMessage.action",
+    "OnFailure": "/ProductCatalog2/Actions/Service/SyncFailureMessage.action"
+}

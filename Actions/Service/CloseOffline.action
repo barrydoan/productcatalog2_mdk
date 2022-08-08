@@ -1,0 +1,10 @@
+{
+    "_Type": "Action.Type.OfflineOData.Close",
+    "Service": "/ProductCatalog2/Services/productcatalog2.service",
+    "Force": true,
+    "ActionResult": {
+        "_Name": "close"
+    },
+    "OnSuccess": "/ProductCatalog2/Actions/Service/CloseOfflineSuccessMessage.action",
+    "OnFailure": "/ProductCatalog2/Actions/Service/CloseOfflineFailureMessage.action"
+}

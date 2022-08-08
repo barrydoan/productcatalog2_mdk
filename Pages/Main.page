@@ -1,0 +1,58 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main",
+	"Caption": "Main",
+	"PrefersLargeCaption": true,
+	"ToolBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "LogoutToolbarItem",
+				"Caption": "Logout",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true,
+				"OnPress": "/ProductCatalog2/Actions/Logout.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "UploadToolbarItem",
+				"Caption": "Sync",
+				"Enabled": true,
+				"Visible": "$(PLT,true,true,false)",
+				"Clickable": true,
+				"OnPress": "/ProductCatalog2/Actions/Service/SyncStartedMessage.action"
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem0",
+				"Caption": "Product",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem1",
+				"Caption": "Search",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true
+			},
+			{
+				"_Type": "Control.Type.ToolbarItem",
+				"_Name": "ToolbarItem2",
+				"Caption": "Order",
+				"Enabled": true,
+				"Visible": true,
+				"Clickable": true
+			}
+		]
+	}
+}
