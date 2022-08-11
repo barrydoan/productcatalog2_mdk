@@ -5,57 +5,56 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.DataTable",
+					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/ProductCatalog2/Services/productcatalog2.service",
 						"EntitySet": "Products",
 						"QueryOptions": "$orderby=name"
 					},
-					"_Name": "SectionDataTable0",
-					"Header": {
-						"_Name": "SectionDataTableHeader0",
-						"UseTopPadding": true,
-						"DataTable": {
-							"Items": [
-								{
-									"Text": ""
-								},
-								{
-									"Text": "Name"
-								}
-							],
-							"Layout": {
-								"ColumnWidth": [
-								]
-							}
-						}
-					},
+					"_Name": "SectionObjectTable0",
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"Row": {
-						"Items": [
-							{
-								"Text": "{NDC}"
-							},
-							{
-								"Text": "{name}"
-							}
-						],
-						"Layout": {
-							"ColumnWidth": [
-							]
-						}
+					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
+						"Title": "{name}",
+						"Subhead": "{NDC}",
+						"Footnote": "{supplierName}",
+						"StatusText": "acq: {acqCost}",
+						"SubstatusText": "ret: {retailPrice}",
+						"DetailImage": "/ProductCatalog2/Services/productcatalog2.service/{@odata.readLink}/$value",
+						"DetailImageIsCircular": true,
+						"PreserveIconStackSpacing": false,
+						"AccessoryType": "none",
+						"Selected": false
+					},
+					"Search": {
+						"Enabled": true
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
 						"PageSize": 50
+					},
+					"HighlightSelectedItem": false,
+					"Selection": {
+						"ExitOnLastDeselect": true,
+						"LongPressToEnable": "None",
+						"Mode": "None"
 					}
 				}
 			]
 		}
 	],
+	"DesignTimeTarget": {
+		"Service": "/ProductCatalog2/Services/productcatalog2.service",
+		"EntitySet": "Products",
+		"QueryOptions": "$orderby=name"
+	},
 	"_Type": "Page",
 	"_Name": "ProductListPage",
 	"Caption": "ProductListPage",

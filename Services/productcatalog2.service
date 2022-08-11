@@ -1,5 +1,5 @@
 {
 	"DestinationName": "productcatalog2",
-	"OfflineEnabled": true,
+	"OfflineEnabled": false,
 	"SourceType": "Mobile"
 }

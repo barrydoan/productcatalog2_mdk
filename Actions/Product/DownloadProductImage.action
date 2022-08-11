@@ -1,0 +1,7 @@
+{
+	"_Type": "Action.Type.ODataService.DownloadMedia",
+	"Target": {
+		"Service": "/ProductCatalog2/Services/productcatalog2.service",
+		"EntitySet": "Products"
+	}
+}
