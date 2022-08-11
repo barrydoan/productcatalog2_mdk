@@ -1,12 +1,144 @@
 {
-	"_Type": "Page",
-	"_Name": "ProductFilter",
 	"Controls": [
 		{
-			"_Name": "SectionedTable0",
-			"_Type": "Control.Type.SectionedTable"
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Sorter",
+							"_Name": "SortBy",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowEmptySelection": false,
+							"AllowMultipleSelection": true,
+							"SortByItems": [
+								{
+									"DisplayValue": "Name",
+									"ReturnValue": "name"
+								},
+								{
+									"DisplayValue": "Category",
+									"ReturnValue": "categoryName"
+								},
+								{
+									"DisplayValue": "Supplier",
+									"ReturnValue": "supplierName"
+								},
+								{
+									"DisplayValue": "Acq. Cost (l to h)",
+									"ReturnValue": "acqCost asc"
+								},
+								{
+									"DisplayValue": "Acq. Cost (h to l)",
+									"ReturnValue": "acqCost desc"
+								}
+							]
+						}
+					],
+					"Caption": "Sort by",
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "CategoryFilter",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Category",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"FilterProperty": "categoryName",
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/ProductCatalog2/Services/productcatalog2.service",
+									"EntitySet": "Categories"
+								},
+								"DisplayValue": "{name}",
+								"ReturnValue": "{name}"
+							}
+						},
+						{
+							"_Type": "Control.Type.FormCell.ListPicker",
+							"_Name": "SupplierFilter",
+							"IsEditable": true,
+							"IsVisible": true,
+							"AllowMultipleSelection": false,
+							"AllowEmptySelection": false,
+							"Caption": "Supplier",
+							"DataPaging": {
+								"ShowLoadingIndicator": false,
+								"PageSize": 50
+							},
+							"PickerPrompt": "Please select one single item",
+							"IsSelectedSectionEnabled": false,
+							"IsPickerDismissedOnSelection": false,
+							"IsSearchCancelledAfterSelection": false,
+							"AllowDefaultValueIfOneItem": false,
+							"FilterProperty": "supplierName",
+							"Search": {
+								"Enabled": true
+							},
+							"PickerItems": {
+								"Target": {
+									"Service": "/ProductCatalog2/Services/productcatalog2.service",
+									"EntitySet": "Suppliers"
+								},
+								"DisplayValue": "{name}",
+								"ReturnValue": "{name}"
+							}
+						}
+					],
+					"Caption": "Filter by",
+					"Visible": true
+				}
+			]
 		}
 	],
+	"_Type": "Page",
+	"_Name": "ProductFilter",
 	"Caption": "ProductFilter",
-	"PrefersLargeCaption": true
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"SystemItem": "Cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Actions/CloseModalCancel.action"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"SystemItem": "Done",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Actions/CloseModalComplete.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	},
+	"Result": [
+		"#Page:ProductFilter/#Control:SortBy/#Value",
+		"#Page:ProductFilter/#Control:CategoryFilter/#FilterValue",
+		"#Page:ProductFilter/#Control:SupplierFilter/#FilterValue"
+	]
 }

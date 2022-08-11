@@ -58,5 +58,19 @@
 	"_Type": "Page",
 	"_Name": "ProductListPage",
 	"Caption": "ProductListPage",
-	"PrefersLargeCaption": true
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"Icon": "sap-icon://filter",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Actions/Product/NaviTo_ProductFilter.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

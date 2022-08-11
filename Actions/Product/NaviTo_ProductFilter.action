@@ -1,0 +1,5 @@
+{
+	"_Type": "Action.Type.Filter",
+	"Filterable": "#Page:ProductListPage/#Control:SectionedTable0",
+	"PageToOpen": "/ProductCatalog2/Pages/Product/ProductFilter.page"
+}

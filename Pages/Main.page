@@ -20,7 +20,7 @@
 				"Clickable": true,
 				"Icon": "sap-icon://product",
 				"ItemType": "Button",
-				"OnPress": "/ProductCatalog2/Actions/Product/NaviToProductList.action"
+				"OnPress": "/ProductCatalog2/Actions/Product/NaviTo_ProductList.action"
 			},
 			{
 				"_Type": "Control.Type.ToolbarItem",
