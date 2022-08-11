@@ -1,0 +1,40 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.FormCellContainer",
+			"_Name": "FormCellContainer0",
+			"Sections": [
+				{
+					"Controls": [
+						{
+							"Value": "/ProductCatalog2/Rules/Cart/GenerateCartNo.js",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCNewCartNo",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "CartNo",
+							"PlaceHolder": "PlaceHolder"
+						}
+					],
+					"Visible": true
+				},
+				{
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Save",
+							"TextAlignment": "center"
+						}
+					],
+					"Visible": true
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "NewCart",
+	"Caption": "NewCart",
+	"PrefersLargeCaption": true
+}

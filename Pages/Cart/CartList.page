@@ -8,8 +8,8 @@
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/ProductCatalog2/Services/productcatalog2.service",
-						"EntitySet": "Products",
-						"QueryOptions": "$orderby=name"
+						"EntitySet": "Carts",
+						"QueryOptions": "$orderby=createdAt"
 					},
 					"_Name": "SectionObjectTable0",
 					"Visible": true,
@@ -22,21 +22,14 @@
 							],
 							"PerformFirstActionWithFullSwipe": true
 						},
-						"Title": "{name}",
-						"Subhead": "{NDC}",
-						"Footnote": "{supplierName}",
-						"StatusText": "acq: {acqCost}",
-						"SubstatusText": "re: {retailPrice}",
-						"DetailImage": "/ProductCatalog2/Services/productcatalog2.service/{@odata.readLink}/$value",
+						"Title": "{CardNo}",
+						"StatusText": "{total}",
+						"DetailImage": "sap-icon://cart",
 						"DetailImageIsCircular": true,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
-						"AccessoryButtonIcon": "sap-icon://cart-3",
-						"AccessoryButtonText": "Buy",
+						"OnPress": "/ProductCatalog2/Actions/Cart/NaviTo_CartDetail.action",
 						"Selected": false
-					},
-					"Search": {
-						"Enabled": true
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -52,25 +45,20 @@
 			]
 		}
 	],
-	"DesignTimeTarget": {
-		"Service": "/ProductCatalog2/Services/productcatalog2.service",
-		"EntitySet": "Products",
-		"QueryOptions": "$orderby=name"
-	},
 	"_Type": "Page",
-	"_Name": "ProductListPage",
-	"Caption": "ProductListPage",
+	"_Name": "CartList",
+	"Caption": "CartList",
 	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
 			{
 				"_Name": "ActionBarItem0",
 				"Caption": "",
-				"Icon": "sap-icon://filter",
+				"Icon": "sap-icon://sys-add",
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/ProductCatalog2/Actions/Product/NaviTo_ProductFilter.action"
+				"OnPress": "/ProductCatalog2/Actions/Cart/NaviTo_NewCart.action"
 			}
 		],
 		"_Name": "ActionBar1"

@@ -2,7 +2,39 @@
 	"Controls": [
 		{
 			"_Type": "Control.Type.SectionedTable",
-			"_Name": "SectionedTable0"
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Product",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/ProductCatalog2/Actions/Product/NaviTo_ProductList.action"
+						},
+						{
+							"_Name": "SectionButton1",
+							"Title": "Scan",
+							"TextAlignment": "center",
+							"Visible": true
+						},
+						{
+							"_Name": "SectionButton2",
+							"Title": "Cart",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/ProductCatalog2/Actions/Cart/NaviTo_CartList.action"
+						}
+					]
+				}
+			]
 		}
 	],
 	"_Type": "Page",
@@ -11,37 +43,6 @@
 	"PrefersLargeCaption": true,
 	"ToolBar": {
 		"Items": [
-			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "ToolbarItem0",
-				"Caption": "Product",
-				"Enabled": true,
-				"Visible": true,
-				"Clickable": true,
-				"Icon": "sap-icon://product",
-				"ItemType": "Button",
-				"OnPress": "/ProductCatalog2/Actions/Product/NaviTo_ProductList.action"
-			},
-			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "ToolbarItem1",
-				"Caption": "Search",
-				"Enabled": true,
-				"Visible": true,
-				"Clickable": true,
-				"Icon": "sap-icon://search",
-				"ItemType": "Button"
-			},
-			{
-				"_Type": "Control.Type.ToolbarItem",
-				"_Name": "ToolbarItem2",
-				"Caption": "Order",
-				"Enabled": true,
-				"Visible": true,
-				"Clickable": true,
-				"Icon": "sap-icon://sales-order",
-				"ItemType": "Button"
-			},
 			{
 				"_Type": "Control.Type.ToolbarItem",
 				"_Name": "LogoutToolbarItem",
