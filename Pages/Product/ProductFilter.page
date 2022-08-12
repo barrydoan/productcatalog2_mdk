@@ -111,7 +111,7 @@
 	],
 	"_Type": "Page",
 	"_Name": "ProductFilter",
-	"Caption": "ProductFilter",
+	"Caption": "Filter",
 	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [

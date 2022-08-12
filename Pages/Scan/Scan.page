@@ -1,0 +1,31 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.ButtonTable",
+					"_Name": "SectionButtonTable0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Buttons": [
+						{
+							"_Name": "SectionButton0",
+							"Title": "Scan barcode",
+							"TextAlignment": "center",
+							"Visible": true,
+							"OnPress": "/ProductCatalog2/Actions/Scan/ScanBarcode.action"
+						}
+					]
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Scan",
+	"Caption": "Scan",
+	"PrefersLargeCaption": true
+}

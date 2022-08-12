@@ -1,5 +1,5 @@
 {
-	"MainPage": "/ProductCatalog2/Pages/Main.page",
+	"MainPage": "/ProductCatalog2/Pages/Main2.page",
 	"OnLaunch": [
 		"/ProductCatalog2/Actions/Service/InitializeOffline.action"
 	],

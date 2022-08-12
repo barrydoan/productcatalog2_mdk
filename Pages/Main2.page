@@ -8,18 +8,22 @@
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Product",
 					"Image": "sap-icon://product",
+					"PageToOpen": "/ProductCatalog2/Pages/Product/ProductListPage.page",
 					"_Name": "TabItem0"
 				},
 				{
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Cart",
 					"Image": "sap-icon://cart",
+					"PageToOpen": "/ProductCatalog2/Pages/Cart/CartList.page",
 					"_Name": "TabItem1"
 				},
 				{
 					"_Type": "Control.Type.TabItem",
 					"Caption": "Scan",
 					"Image": "sap-icon://bar-code",
+					"OnPress": "/ProductCatalog2/Actions/Scan/ScanBarcode.action",
+					"PageToOpen": "/ProductCatalog2/Pages/Scan/Scan.page",
 					"_Name": "TabItem2"
 				}
 			],
@@ -28,5 +32,5 @@
 	],
 	"_Type": "Page",
 	"_Name": "Main2",
-	"Caption": "Main2"
+	"Caption": "Product Catalog"
 }

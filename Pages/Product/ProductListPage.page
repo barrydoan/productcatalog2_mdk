@@ -60,7 +60,7 @@
 	},
 	"_Type": "Page",
 	"_Name": "ProductListPage",
-	"Caption": "ProductListPage",
+	"Caption": "List",
 	"PrefersLargeCaption": true,
 	"ActionBar": {
 		"Items": [
