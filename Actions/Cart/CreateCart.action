@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"OnFailure": "/ProductCatalog2/Actions/Cart/CreateOrderFailureMessage.action",
+	"OnSuccess": "/ProductCatalog2/Actions/CloseModalComplete.action",
+	"Target": {
+		"Service": "/ProductCatalog2/Services/productcatalog2.service",
+		"EntitySet": "Carts"
+	},
+	"Properties": {
+		"CardNo": "#Page:NewCart/#Control:FCNewCartNo/#Value"
+	}
+}

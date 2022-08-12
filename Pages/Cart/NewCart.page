@@ -20,13 +20,6 @@
 				},
 				{
 					"Controls": [
-						{
-							"_Type": "Control.Type.FormCell.Button",
-							"_Name": "FormCellButton0",
-							"IsVisible": true,
-							"Title": "Save",
-							"TextAlignment": "center"
-						}
 					],
 					"Visible": true
 				}
@@ -36,5 +29,28 @@
 	"_Type": "Page",
 	"_Name": "NewCart",
 	"Caption": "NewCart",
-	"PrefersLargeCaption": true
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"Icon": "sap-icon://cancel",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Actions/CloseModalCancel.action"
+			},
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Actions/Cart/CreateCart.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

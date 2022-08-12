@@ -1,0 +1,32 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.Tabs",
+			"_Name": "Tabs0",
+			"Items": [
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Product",
+					"Image": "sap-icon://product",
+					"_Name": "TabItem0"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Cart",
+					"Image": "sap-icon://cart",
+					"_Name": "TabItem1"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Scan",
+					"Image": "sap-icon://bar-code",
+					"_Name": "TabItem2"
+				}
+			],
+			"Position": "Top"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Main2",
+	"Caption": "Main2"
+}
