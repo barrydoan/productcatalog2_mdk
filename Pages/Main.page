@@ -23,7 +23,8 @@
 							"_Name": "SectionButton1",
 							"Title": "Scan",
 							"TextAlignment": "center",
-							"Visible": true
+							"Visible": true,
+							"OnPress": "/ProductCatalog2/Actions/Scan/ScanBarcode.action"
 						},
 						{
 							"_Name": "SectionButton2",

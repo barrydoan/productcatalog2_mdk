@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Scan barcode fail",
+	"Title": "Scan barcode",
+	"OKCaption": "Ok"
+}
