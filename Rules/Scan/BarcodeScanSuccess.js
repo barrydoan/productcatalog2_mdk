@@ -11,7 +11,8 @@ export default function BarcodeScanSuccess(context) {
     .then(results => {
         if (results && results.length) {
             let prod = results.getItem(0);
-            alert(JSON.stringify(prod))
+            pageProxy.setActionBinding(prod)
+            return pageProxy.executeAction('/ProductCatalog2/Actions/Product/NaviTo_ProductDetail.action')
         }
         else {
             message = `Product with barcode: ${formatedBarcode} not found`

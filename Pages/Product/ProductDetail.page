@@ -1,0 +1,146 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue2",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"KeyAndValues": [
+						{
+							"Value": "{name}",
+							"_Name": "KeyValue8",
+							"KeyName": "Name",
+							"Visible": true
+						},
+						{
+							"Value": "{categoryName}",
+							"_Name": "KeyValue9",
+							"KeyName": "Category name",
+							"Visible": true
+						},
+						{
+							"Value": "{supplierName}",
+							"_Name": "KeyValue10",
+							"KeyName": "Supplier Name",
+							"Visible": true
+						},
+						{
+							"Value": "{acqCost}",
+							"_Name": "KeyValue11",
+							"KeyName": "Acq. Cost",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Layout": {
+						"NumberOfColumns": 4
+					}
+				},
+				{
+					"_Type": "Section.Type.Image",
+					"_Name": "SectionImage0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Image": "/ProductCatalog2/Services/productcatalog2.service/{@odata.readLink}/$value",
+					"Alignment": "center",
+					"ContentMode": "ScaleAspectFit"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{NDC}",
+							"_Name": "KeyValue0",
+							"KeyName": "Ndc",
+							"Visible": true
+						},
+						{
+							"Value": "{UPC}",
+							"_Name": "KeyValue1",
+							"KeyName": "UPC",
+							"Visible": true
+						},
+						{
+							"Value": "{shortId}",
+							"_Name": "KeyValue3",
+							"KeyName": "Store#",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 3
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{awp}",
+							"_Name": "KeyValue4",
+							"KeyName": "AWP",
+							"Visible": true
+						},
+						{
+							"Value": "{retailPrice}",
+							"_Name": "KeyValue5",
+							"KeyName": "Retail Price",
+							"Visible": true
+						},
+						{
+							"Value": "{rebate}",
+							"_Name": "KeyValue6",
+							"KeyName": "Rebate",
+							"Visible": true
+						},
+						{
+							"Value": "{perDose}",
+							"_Name": "KeyValue7",
+							"KeyName": "Per Dose",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 4
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "ProductDetail",
+	"Caption": "Product Detail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://add",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

@@ -33,6 +33,7 @@
 						"AccessoryType": "none",
 						"AccessoryButtonIcon": "sap-icon://cart-3",
 						"AccessoryButtonText": "Buy",
+						"OnPress": "/ProductCatalog2/Actions/Product/NaviTo_ProductDetail.action",
 						"Selected": false
 					},
 					"Search": {
