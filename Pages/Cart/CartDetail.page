@@ -17,6 +17,11 @@
 						"FooterVisible": false
 					},
 					"ObjectCell": {
+						"ContextMenu": {
+							"Items": [
+							],
+							"PerformFirstActionWithFullSwipe": true
+						},
 						"Title": "{product/name}",
 						"Subhead": "Subhead",
 						"Footnote": "Footnote",
@@ -27,12 +32,7 @@
 						"PreserveIconStackSpacing": true,
 						"AccessoryType": "none",
 						"ProgressIndicator": "inProgress",
-						"Selected": false,
-						"ContextMenu": {
-							"Items": [
-							],
-							"PerformFirstActionWithFullSwipe": true
-						}
+						"Selected": false
 					},
 					"DataPaging": {
 						"ShowLoadingIndicator": false,
@@ -51,5 +51,20 @@
 	"_Type": "Page",
 	"_Name": "CartDetail",
 	"Caption": "CartDetail",
-	"PrefersLargeCaption": true
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"Text": "Item",
+				"_Name": "ActionBarItem0",
+				"Caption": "",
+				"Icon": "sap-icon://bar-code",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Actions/Cart/BarcodeScanAdd.action"
+			}
+		],
+		"_Name": "ActionBar1"
+	}
 }

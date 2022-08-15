@@ -5,21 +5,39 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"_Type": "Section.Type.ButtonTable",
-					"_Name": "SectionButtonTable0",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Title": "Scan barcode",
+							"TextAlignment": "center",
+							"ButtonType": "Button",
+							"OnPress": "/ProductCatalog2/Actions/Scan/ScanBarcodeDetail.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Barcode",
+							"KeyboardType": "Number"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton0",
+							"IsVisible": true,
+							"Title": "Search",
+							"TextAlignment": "center",
+							"ButtonType": "Button"
+						}
+					],
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"Buttons": [
-						{
-							"_Name": "SectionButton0",
-							"Title": "Scan barcode",
-							"TextAlignment": "center",
-							"Visible": true,
-							"OnPress": "/ProductCatalog2/Actions/Scan/ScanBarcode.action"
-						}
-					]
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}

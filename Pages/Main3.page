@@ -1,8 +1,8 @@
 {
 	"Controls": [
 		{
-			"_Type": "Control.Type.Tabs",
-			"_Name": "Tabs0",
+			"_Type": "Control.Type.BottomNavigation",
+			"_Name": "BottomNavigation0",
 			"Items": [
 				{
 					"_Type": "Control.Type.TabItem",
@@ -25,11 +25,10 @@
 					"PageToOpen": "/ProductCatalog2/Pages/Scan/Scan.page",
 					"_Name": "TabItem2"
 				}
-			],
-			"Position": "Bottom"
+			]
 		}
 	],
 	"_Type": "Page",
-	"_Name": "Main2",
-	"Caption": "Product Catalog"
+	"_Name": "Main3",
+	"Caption": "Product catalog"
 }

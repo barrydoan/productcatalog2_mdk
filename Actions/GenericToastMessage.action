@@ -1,6 +1,7 @@
 {
 	"_Type": "Action.Type.ToastMessage",
 	"Message": "Message",
+	"NumberOfLines": 3,
 	"Duration": 3,
 	"Icon": "sap-icon://information",
 	"IsIconHidden": false,

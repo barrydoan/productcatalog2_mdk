@@ -1,7 +1,7 @@
 
 import { formatBarcode } from './BarcodeUtil/FormatBarcode';
 
-export default function BarcodeScanSuccess(context) {
+export default function BarcodeScanDetail(context) {
     let pageProxy = context.getPageProxy();
     var message = '';
     var actionResult = context.getActionResult('BarcodeScannerResult');

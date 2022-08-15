@@ -3,25 +3,7 @@
 	"CF": {
 		"Target": "https://api.cf.us10.hana.ondemand.com",
 		"Organization": "1c27ef24-9126-4a09-a257-98026a7a88b9",
-		"Space": "e8f06cfe-0205-4bdd-8c2a-cc7ce982652f",
-		"Deploy": {
-			"Description": "",
-			"WebClient": {
-				"Runtime": "production",
-				"URL": "https://mdk-webclient-runtime.cfapps.us10.hana.ondemand.com/runtime/"
-			},
-			"Destination": [
-				{
-					"CF": "productcatalog2",
-					"MDK": "productcatalog2",
-					"URL": ""
-				}
-			],
-			"Name": "ns.ProductCatalog2",
-			"Version": "1.0.0",
-			"AppRouter": "standalone",
-			"URL": "https://7098580dtrial-dev-nsproductcatalog2-approuter.cfapps.us10.hana.ondemand.com/nsProductCatalog2/index.html"
-		}
+		"Space": "e8f06cfe-0205-4bdd-8c2a-cc7ce982652f"
 	},
 	"MobileService": {
 		"Type": "standard",

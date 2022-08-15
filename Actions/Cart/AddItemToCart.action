@@ -1,0 +1,12 @@
+{
+	"_Type": "Action.Type.ODataService.CreateEntity",
+	"OnFailure": "/ProductCatalog2/Actions/Cart/AddCartItemFailureMessage.action",
+	"Target": {
+		"Service": "/ProductCatalog2/Services/productcatalog2.service",
+		"EntitySet": "CartItems"
+	},
+	"Properties": {
+		"parent_ID": "e47de808-bae1-4844-a56a-8a6830142631",
+		"product_ID": 1
+	}
+}

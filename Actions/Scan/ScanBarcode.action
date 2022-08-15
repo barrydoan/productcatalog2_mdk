@@ -1,8 +1,0 @@
-{
-	"_Type": "Action.Type.OpenBarcodeScanner",
-	"ActionResult": {
-		"_Name": "BarcodeScannerResult"
-	},
-	"OnFailure": "/ProductCatalog2/Actions/Scan/BarcodeScanFailureMessage.action",
-	"OnSuccess": "/ProductCatalog2/Rules/Scan/BarcodeScanSuccess.js"
-}
