@@ -1,0 +1,124 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0",
+			"Sections": [
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{parent_ID}",
+							"_Name": "KeyValue1",
+							"KeyName": "Cart No",
+							"Visible": true
+						},
+						{
+							"Value": "{product_ID}",
+							"_Name": "KeyValue0",
+							"KeyName": "Product Id",
+							"Visible": true
+						},
+						{
+							"Value": "{netAmount}",
+							"_Name": "KeyValue2",
+							"KeyName": "Price ",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 3
+					}
+				},
+				{
+					"Controls": [
+						{
+							"Value": "{amount}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCAmount",
+							"IsEditable": true,
+							"IsVisible": true,
+							"Caption": "Amount",
+							"PlaceHolder": "PlaceHolder",
+							"KeyboardType": "Number"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"Value": "{product/NDC}",
+							"_Name": "KeyValue4",
+							"KeyName": "NDC",
+							"Visible": true
+						},
+						{
+							"Value": "{product/name}",
+							"_Name": "KeyValue5",
+							"KeyName": "Name",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue1",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
+					"Controls": [
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "CartItemDetail",
+	"Caption": "CartItemDetail",
+	"PrefersLargeCaption": true,
+	"ActionBar": {
+		"Items": [
+			{
+				"_Name": "ActionBarItem0",
+				"Caption": "Item",
+				"Icon": "sap-icon://delete",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Rules/Cart/CartItemDeleteConfirmation.js"
+			},
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"Icon": "sap-icon://save",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true
+			}
+		],
+		"_Name": "ActionBar1"
+	}
+}

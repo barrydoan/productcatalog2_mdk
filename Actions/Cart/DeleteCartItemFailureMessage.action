@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Fail to delete item",
+	"Title": "Delete cart item",
+	"OKCaption": "Ok"
+}

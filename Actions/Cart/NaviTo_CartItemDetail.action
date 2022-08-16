@@ -1,0 +1,5 @@
+{
+	"_Type": "Action.Type.Navigation",
+	"PageToOpen": "/ProductCatalog2/Pages/Cart/CartItemDetail.page",
+	"NavigationType": "Inner"
+}
