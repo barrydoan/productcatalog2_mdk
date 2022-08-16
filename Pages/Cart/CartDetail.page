@@ -23,15 +23,14 @@
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "{product/name}",
-						"Subhead": "Subhead",
-						"Footnote": "Footnote",
-						"Description": "Description",
-						"StatusText": "Status",
-						"SubstatusText": "Substatus",
+						"Subhead": "{product/NDC}",
+						"StatusText": "{product/acqCost}",
+						"SubstatusText": "{amount}",
 						"DetailImageIsCircular": false,
-						"PreserveIconStackSpacing": true,
+						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
-						"ProgressIndicator": "inProgress",
+						"AccessoryButtonIcon": "sap-icon://delete",
+						"AccessoryButtonText": "Delete",
 						"Selected": false
 					},
 					"DataPaging": {
