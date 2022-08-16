@@ -24,7 +24,7 @@
 						},
 						"Title": "{product/name}",
 						"Subhead": "{product/NDC}",
-						"StatusText": "{product/acqCost}",
+						"StatusText": "${product/acqCost}",
 						"SubstatusText": "{amount}",
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,

@@ -25,7 +25,7 @@
 							"Visible": true
 						},
 						{
-							"Value": "{acqCost}",
+							"Value": "${acqCost}",
 							"_Name": "KeyValue11",
 							"KeyName": "Acq. Cost",
 							"Visible": true
@@ -88,25 +88,25 @@
 				{
 					"KeyAndValues": [
 						{
-							"Value": "{awp}",
+							"Value": "${awp}",
 							"_Name": "KeyValue4",
 							"KeyName": "AWP",
 							"Visible": true
 						},
 						{
-							"Value": "{retailPrice}",
+							"Value": "${retailPrice}",
 							"_Name": "KeyValue5",
 							"KeyName": "Retail Price",
 							"Visible": true
 						},
 						{
-							"Value": "{rebate}",
+							"Value": "${rebate}",
 							"_Name": "KeyValue6",
 							"KeyName": "Rebate",
 							"Visible": true
 						},
 						{
-							"Value": "{perDose}",
+							"Value": "${perDose}",
 							"_Name": "KeyValue7",
 							"KeyName": "Per Dose",
 							"Visible": true

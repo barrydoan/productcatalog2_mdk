@@ -23,7 +23,7 @@
 							"PerformFirstActionWithFullSwipe": true
 						},
 						"Title": "{CardNo}",
-						"StatusText": "{total}",
+						"StatusText": "${total}",
 						"DetailImage": "sap-icon://cart",
 						"DetailImageIsCircular": true,
 						"PreserveIconStackSpacing": false,
