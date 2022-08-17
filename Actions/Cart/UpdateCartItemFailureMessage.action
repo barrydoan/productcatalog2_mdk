@@ -1,0 +1,6 @@
+{
+	"_Type": "Action.Type.Message",
+	"Message": "Update Cart Item fail.",
+	"Title": "Update Cart Item",
+	"OKCaption": "Ok"
+}

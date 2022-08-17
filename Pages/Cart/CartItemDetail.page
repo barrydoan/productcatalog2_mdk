@@ -5,36 +5,61 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"KeyAndValues": [
+					"Controls": [
 						{
-							"Value": "{parent_ID}",
-							"_Name": "KeyValue1",
-							"KeyName": "Cart No",
-							"Visible": true
-						},
-						{
-							"Value": "{product_ID}",
-							"_Name": "KeyValue0",
-							"KeyName": "Product Id",
-							"Visible": true
-						},
-						{
-							"Value": "{netAmount}",
-							"_Name": "KeyValue2",
-							"KeyName": "Price ",
-							"Visible": true
+							"Value": "{ID}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCID",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Item ID",
+							"PlaceHolder": "PlaceHolder"
 						}
 					],
-					"MaxItemCount": 1,
-					"_Type": "Section.Type.KeyValue",
-					"_Name": "SectionKeyValue0",
 					"Visible": true,
 					"EmptySection": {
 						"FooterVisible": false
 					},
-					"Layout": {
-						"NumberOfColumns": 3
-					}
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell2"
+				},
+				{
+					"Controls": [
+						{
+							"Value": "{parent_ID}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCParentId",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Parent Id",
+							"PlaceHolder": "PlaceHolder"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell3"
+				},
+				{
+					"Controls": [
+						{
+							"Value": "{product_ID}",
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FCProductId",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Product Id",
+							"PlaceHolder": "PlaceHolder"
+						}
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell4"
 				},
 				{
 					"Controls": [
@@ -65,6 +90,12 @@
 							"Visible": true
 						},
 						{
+							"Value": "{netAmount}",
+							"_Name": "KeyValue2",
+							"KeyName": "Price ",
+							"Visible": true
+						},
+						{
 							"Value": "{product/name}",
 							"_Name": "KeyValue5",
 							"KeyName": "Name",
@@ -79,7 +110,7 @@
 						"FooterVisible": false
 					},
 					"Layout": {
-						"NumberOfColumns": 2
+						"NumberOfColumns": 3
 					}
 				},
 				{
@@ -116,7 +147,8 @@
 				"Icon": "sap-icon://save",
 				"Position": "Right",
 				"IsIconCircular": false,
-				"Visible": true
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Actions/Cart/UpdateCartItem.action"
 			}
 		],
 		"_Name": "ActionBar1"

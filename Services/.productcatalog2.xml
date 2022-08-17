@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
 <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Capabilities.V1.xml">
 <edmx:Include Alias="Capabilities" Namespace="Org.OData.Capabilities.V1"/>
@@ -136,12 +135,6 @@
 <Property Name="product_ID" Type="Edm.Int32"/>
 <Property Name="amount" Type="Edm.Int32"/>
 <Property Name="netAmount" Type="Edm.Decimal" Scale="2" Precision="9"/>
-<Property Name="shortId" Type="Edm.String" MaxLength="8"/>
-<Property Name="NDC" Type="Edm.String" MaxLength="20"/>
-<Property Name="name" Type="Edm.String" MaxLength="111"/>
-<Property Name="imageUrl" Type="Edm.String"/>
-<Property Name="retailPrice" Type="Edm.Decimal" Scale="2" Precision="9"/>
-<Property Name="acqCost" Type="Edm.Decimal" Scale="2" Precision="9"/>
 </EntityType>
 <EntityType Name="Currencies">
 <Key>
@@ -334,7 +327,7 @@
 <Annotation Term="Common.Label" String="Changed On"/>
 </Annotations>
 <Annotations Target="CartService.Products/data">
-<Annotation Term="Core.MediaType" String="image/png"/>
+<Annotation Term="Core.MediaType" String="application/binary"/>
 </Annotations>
 <Annotations Target="CartService.Products/currency">
 <Annotation Term="Common.Label" String="Currency"/>

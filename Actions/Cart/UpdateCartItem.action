@@ -1,0 +1,19 @@
+{
+	"_Type": "Action.Type.ODataService.UpdateEntity",
+	"OnFailure": "/ProductCatalog2/Actions/Cart/UpdateCartItemFailureMessage.action",
+	"OnSuccess": "/ProductCatalog2/Actions/Cart/UpdateCartItemSuccessMessage.action",
+	"Target": {
+		"Service": "/ProductCatalog2/Services/productcatalog2.service",
+		"EntitySet": "CartItems",
+		"ReadLink": "{@odata.editLink}"
+	},
+	"Properties": {
+		"ID": "#Page:CartItemDetail/#Control:FCID/#Value",
+		"parent_ID": "#Page:CartItemDetail/#Control:FCParentId/#Value",
+		"product_ID": "#Page:CartItemDetail/#Control:FCProductId/#Value",
+		"amount": "#Page:CartItemDetail/#Control:FCAmount/#Value"
+	},
+	"RequestOptions": {
+		"UpdateMode": "Replace"
+	}
+}
