@@ -8,7 +8,7 @@ export default function AddProductToCartPageLoaded(context) {
             let clientData = pageProxy.getAppClientData()
             
             if (clientData.defaultCartId) {
-               alert(JSON.stringify(context.binding))
+               //alert(JSON.stringify(context.binding))
                context.executeAction({
                     "Name": "/ProductCatalog2/Actions/Cart/AddItemToCart.action",
                     'Properties': {

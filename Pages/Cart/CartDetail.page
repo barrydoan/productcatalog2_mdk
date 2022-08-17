@@ -53,6 +53,7 @@
 	"_Name": "CartDetail",
 	"Caption": "CartDetail",
 	"PrefersLargeCaption": true,
+	"OnLoaded": "/ProductCatalog2/Actions/InitService.action",
 	"ActionBar": {
 		"Items": [
 			{
