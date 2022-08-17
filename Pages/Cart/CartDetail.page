@@ -32,7 +32,7 @@
 						"AccessoryButtonIcon": "sap-icon://delete",
 						"AccessoryButtonText": "Delete",
 						"OnPress": "/ProductCatalog2/Actions/Cart/NaviTo_CartItemDetail.action",
-						"OnAccessoryButtonPress": "/ProductCatalog2/Rules/Cart/CartItemDeleteConfirmation.js",
+						"OnAccessoryButtonPress": "/ProductCatalog2/Actions/Cart/NaviTo_DeleteCartItem.action",
 						"Selected": false
 					},
 					"DataPaging": {

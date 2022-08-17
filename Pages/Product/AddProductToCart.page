@@ -1,0 +1,13 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "AddProductToCart",
+	"Caption": "Add Product To Cart",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/ProductCatalog2/Rules/Product/AddProductToCartPageLoaded.js"
+}

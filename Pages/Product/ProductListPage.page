@@ -28,12 +28,13 @@
 						"StatusText": "acq: ${acqCost}",
 						"SubstatusText": "re: $S{retailPrice}",
 						"DetailImage": "/ProductCatalog2/Services/productcatalog2.service/{@odata.readLink}/$value",
-						"DetailImageIsCircular": true,
+						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,
 						"AccessoryType": "none",
 						"AccessoryButtonIcon": "sap-icon://cart-3",
 						"AccessoryButtonText": "Buy",
 						"OnPress": "/ProductCatalog2/Actions/Product/NaviTo_ProductDetail.action",
+						"OnAccessoryButtonPress": "/ProductCatalog2/Actions/Product/NaviTo_AddProductToCart.action",
 						"Selected": false
 					},
 					"Search": {

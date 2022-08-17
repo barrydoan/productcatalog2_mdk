@@ -1,0 +1,13 @@
+{
+	"Controls": [
+		{
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable0"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "DeleteCartItem",
+	"Caption": "Delete Cart Item",
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/ProductCatalog2/Rules/Cart/CartItemDeleteConfirmation.js"
+}

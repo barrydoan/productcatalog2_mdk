@@ -30,6 +30,7 @@
 	"_Name": "NewCart",
 	"Caption": "NewCart",
 	"PrefersLargeCaption": true,
+	"OnLoaded": "/ProductCatalog2/Rules/Product/AddProductToCart.js",
 	"ActionBar": {
 		"Items": [
 			{
