@@ -5,6 +5,32 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
+					"KeyAndValues": [
+						{
+							"Value": "{CardNo}",
+							"_Name": "KeyValue0",
+							"KeyName": "Cart No",
+							"Visible": true
+						},
+						{
+							"Value": "${total}",
+							"_Name": "KeyValue1",
+							"KeyName": "Total",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				},
+				{
 					"_Type": "Section.Type.ObjectTable",
 					"Target": {
 						"Service": "/ProductCatalog2/Services/productcatalog2.service",
@@ -56,6 +82,15 @@
 	"OnLoaded": "/ProductCatalog2/Actions/InitService.action",
 	"ActionBar": {
 		"Items": [
+			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"Icon": "sap-icon://delete",
+				"Position": "Left",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Rules/Cart/CartDeleteConfirmation.js"
+			},
 			{
 				"Text": "Item",
 				"_Name": "ActionBarItem0",

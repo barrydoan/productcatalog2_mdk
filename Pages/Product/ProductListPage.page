@@ -26,7 +26,7 @@
 						"Subhead": "{NDC}",
 						"Footnote": "{supplierName}",
 						"StatusText": "acq: ${acqCost}",
-						"SubstatusText": "re: $S{retailPrice}",
+						"SubstatusText": "re: ${retailPrice}",
 						"DetailImage": "/ProductCatalog2/Services/productcatalog2.service/{@odata.readLink}/$value",
 						"DetailImageIsCircular": false,
 						"PreserveIconStackSpacing": false,

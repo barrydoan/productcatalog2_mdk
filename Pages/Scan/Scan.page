@@ -14,22 +14,6 @@
 							"TextAlignment": "center",
 							"ButtonType": "Button",
 							"OnPress": "/ProductCatalog2/Actions/Scan/ScanBarcodeDetail.action"
-						},
-						{
-							"_Type": "Control.Type.FormCell.SimpleProperty",
-							"_Name": "FormCellSimpleProperty0",
-							"IsEditable": true,
-							"IsVisible": true,
-							"Caption": "Barcode",
-							"KeyboardType": "Number"
-						},
-						{
-							"_Type": "Control.Type.FormCell.Button",
-							"_Name": "FormCellButton0",
-							"IsVisible": true,
-							"Title": "Search",
-							"TextAlignment": "center",
-							"ButtonType": "Button"
 						}
 					],
 					"Visible": true,
