@@ -66,6 +66,15 @@
 	"ActionBar": {
 		"Items": [
 			{
+				"_Name": "ActionBarItem1",
+				"Caption": "Item",
+				"Icon": "sap-icon://cart-approval",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/ProductCatalog2/Actions/Cart/NaviTo_CartSelection.action"
+			},
+			{
 				"_Name": "ActionBarItem0",
 				"Caption": "",
 				"Icon": "sap-icon://filter",
