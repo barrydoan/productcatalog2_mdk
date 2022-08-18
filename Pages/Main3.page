@@ -24,6 +24,13 @@
 					"Image": "sap-icon://bar-code",
 					"PageToOpen": "/ProductCatalog2/Pages/Scan/Scan.page",
 					"_Name": "TabItem2"
+				},
+				{
+					"_Type": "Control.Type.TabItem",
+					"Caption": "Setting",
+					"Image": "sap-icon://settings",
+					"PageToOpen": "/ProductCatalog2/Pages/Setting/Setting.page",
+					"_Name": "TabItem3"
 				}
 			]
 		}
