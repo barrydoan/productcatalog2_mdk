@@ -28,13 +28,13 @@ export default function AddProductToCartPageLoaded(context) {
                     }                
                 )
                 context.executeAction({
-                    'Name': '/ProductCatalog2/Actions/Product/NaviTo_ProductList.action'
+                    'Name': '/ProductCatalog2/Actions/CloseModalComplete.action'
                 })
-                } else {
-                    // open page to select car to add product
-                    context.executeAction({
-                        'Name': '/ProductCatalog2/Actions/Cart/NaviTo_CartSelection.action'
-                    })
+            } else {
+                // open page to select car to add product
+                context.executeAction({
+                    'Name': '/ProductCatalog2/Actions/Cart/NaviTo_CartSelection.action'
+                })
             }
 
         } else {
