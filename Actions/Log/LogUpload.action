@@ -1,0 +1,5 @@
+{
+	"_Type": "Action.Type.Logger.Upload",
+	"OnFailure": "/ProductCatalog2/Actions/Log/LogUploadFailure.action",
+	"OnSuccess": "/ProductCatalog2/Actions/Log/LogUploadSuccessful.action"
+}

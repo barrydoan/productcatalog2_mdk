@@ -42,6 +42,24 @@
 					},
 					"_Type": "Section.Type.FormCell",
 					"_Name": "SectionFormCell0"
+				},
+				{
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1",
+					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton1",
+							"IsVisible": true,
+							"Title": "Upload log",
+							"TextAlignment": "center",
+							"OnPress": "/ProductCatalog2/Actions/Log/LogUpload.action"
+						}
+					]
 				}
 			]
 		}

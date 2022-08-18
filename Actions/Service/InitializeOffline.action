@@ -1,24 +1,25 @@
 {
-    "Service": "/ProductCatalog2/Services/productcatalog2.service",
-    "DefiningRequests": [{
-            "Name": "Carts",
-            "Query": "Carts"
-        },
-        {
-            "Name": "Products",
-            "Query": "Products"
-        },
-        {
-            "Name": "CartItems",
-            "Query": "CartItems"
-        }
-    ],
-    "_Type": "Action.Type.ODataService.Initialize",
-    "ShowActivityIndicator": true,
-    "ActivityIndicatorText": "Downloading...",
-    "ActionResult": {
-        "_Name": "init"
-    },
-    "OnSuccess": "/ProductCatalog2/Actions/Service/InitializeOfflineSuccessMessage.action",
-    "OnFailure": "/ProductCatalog2/Actions/Service/InitializeOfflineFailureMessage.action"
+	"_Type": "Action.Type.ODataService.Initialize",
+	"ActionResult": {
+		"_Name": "init"
+	},
+	"OnFailure": "/ProductCatalog2/Actions/Service/InitializeOfflineFailureMessage.action",
+	"OnSuccess": "/ProductCatalog2/Actions/Log/LogSetState.action",
+	"ShowActivityIndicator": true,
+	"ActivityIndicatorText": "Downloading...",
+	"Service": "/ProductCatalog2/Services/productcatalog2.service",
+	"DefiningRequests": [
+		{
+			"Name": "Carts",
+			"Query": "Carts"
+		},
+		{
+			"Name": "Products",
+			"Query": "Products"
+		},
+		{
+			"Name": "CartItems",
+			"Query": "CartItems"
+		}
+	]
 }
