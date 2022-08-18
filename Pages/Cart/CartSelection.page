@@ -5,13 +5,21 @@
 			"_Name": "SectionedTable0",
 			"Sections": [
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell0",
 					"Controls": [
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty0",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Current Cart Id"
+						},
+						{
+							"_Type": "Control.Type.FormCell.SimpleProperty",
+							"_Name": "FormCellSimpleProperty1",
+							"IsEditable": false,
+							"IsVisible": true,
+							"Caption": "Current Cart No"
+						},
 						{
 							"_Type": "Control.Type.FormCell.ListPicker",
 							"_Name": "FormCellListPicker0",
@@ -39,7 +47,13 @@
 								"ReturnValue": "{ID}"
 							}
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0"
 				}
 			]
 		}
@@ -47,5 +61,6 @@
 	"_Type": "Page",
 	"_Name": "CartSelection",
 	"Caption": "Cart Selection",
-	"PrefersLargeCaption": true
+	"PrefersLargeCaption": true,
+	"OnLoaded": "/ProductCatalog2/Rules/Cart/CartSelectionOnLoaded.js"
 }
