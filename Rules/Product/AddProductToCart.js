@@ -47,6 +47,14 @@ export default function AddProductToCart(context) {
         // open page to select car to add product
         context.executeAction({
             'Name': '/ProductCatalog2/Actions/Cart/NaviTo_CartSelection.action'
+        }).then(success => {
+            var message = `Product with id: ${context.binding.name} cannot be added to cart. Please select the cart first`
+                context.executeAction({
+                    'Name': '/ProductCatalog2/Actions/GenericToastMessage.action',
+                    'Properties': {
+                        'Message': message
+                    }
+            })
         })
     }
 

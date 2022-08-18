@@ -9,5 +9,6 @@
 	"_Name": "AddProductToCart",
 	"Caption": "Add Product To Cart",
 	"PrefersLargeCaption": true,
-	"OnLoaded": "/ProductCatalog2/Rules/Product/AddProductToCartPageLoaded.js"
+	"OnLoaded": "/ProductCatalog2/Rules/Product/AddProductToCartPageLoaded.js",
+	"OnReturning": "/ProductCatalog2/Rules/Product/AddProductToCartReturning.js"
 }

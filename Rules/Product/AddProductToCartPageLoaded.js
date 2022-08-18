@@ -1,5 +1,5 @@
 
-export default function AddProductToCartPageLoaded(context) {
+export default async function AddProductToCartPageLoaded(context) {
     context.executeAction({
         'Name': '/ProductCatalog2/Actions/AddProductToCartConfirmation.action'}).then(result => {
         if (result.data) {
