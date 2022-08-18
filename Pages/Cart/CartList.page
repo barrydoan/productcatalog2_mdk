@@ -49,6 +49,7 @@
 	"_Name": "CartList",
 	"Caption": "CartList",
 	"PrefersLargeCaption": true,
+	"OnReturning": "/ProductCatalog2/Rules/Cart/CartListReturning.js",
 	"ActionBar": {
 		"Items": [
 			{
