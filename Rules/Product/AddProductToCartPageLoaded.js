@@ -1,15 +1,20 @@
 
 export default async function AddProductToCartPageLoaded(context) {
-    context.executeAction({
-        'Name': '/ProductCatalog2/Actions/AddProductToCartConfirmation.action'}).then(result => {
+
+    try {
+        console.log('AddProductToCartPageLoaded start')
+        console.time('AddProductToCartPageLoaded')
+        let result = await context.executeAction({
+            'Name': '/ProductCatalog2/Actions/AddProductToCartConfirmation.action'
+        })
         if (result.data) {
             let pageProxy = context.getPageProxy()
             // application level
             let clientData = pageProxy.getAppClientData()
             
             if (clientData.defaultCartId) {
-               //alert(JSON.stringify(context.binding))
-               context.executeAction({
+                //alert(JSON.stringify(context.binding))
+                await context.executeAction({
                     "Name": "/ProductCatalog2/Actions/Cart/AddItemToCart.action",
                     'Properties': {
                         'Properties': {
@@ -17,22 +22,20 @@ export default async function AddProductToCartPageLoaded(context) {
                             'product_ID':context.binding.ID
                         }
                     }
-                }).then(
-                    results => {
-                        //alert(JSON.stringify(results))
-                        console.log(results)
-                    },
-                    error => {
-                        //alert(JSON.stringify(error))
-                        console.log(error)
-                    }                
-                )
-                context.executeAction({
+                })
+                await context.executeAction({
                     'Name': '/ProductCatalog2/Actions/CloseModalComplete.action'
+                })
+                var message = `Product : ${context.binding.name} has been added to cart`
+                await context.executeAction({
+                    'Name': '/ProductCatalog2/Actions/GenericToastMessage.action',
+                    'Properties': {
+                        'Message': message
+                    }
                 })
             } else {
                 // open page to select car to add product
-                context.executeAction({
+                await context.executeAction({
                     'Name': '/ProductCatalog2/Actions/Cart/NaviTo_CartSelection.action'
                 })
             }
@@ -40,5 +43,11 @@ export default async function AddProductToCartPageLoaded(context) {
         } else {
             console.log('User rejected')
         }
-    });
+             
+    } catch (e) {
+        console.error(e);
+    } finally {
+        console.timeEnd('AddProductToCartPageLoaded')
+        console.log('AddProductToCartPageLoaded end')
+    }
 }
