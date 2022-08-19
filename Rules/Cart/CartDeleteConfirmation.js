@@ -1,22 +1,27 @@
 
-export default function CartDeleteConfirmation(context) {
-    context.executeAction({
-        'Name': '/ProductCatalog2/Actions/DeleteConfirmation.action'}).then(result => {
+export default async function CartDeleteConfirmation(context) {
+    try {
+        console.log('CartDeleteConfirmation start')
+        console.time('CartDeleteConfirmation')
+        let result = await context.executeAction({
+            'Name': '/ProductCatalog2/Actions/DeleteConfirmation.action'
+        })
         if (result.data) {
-            context.executeAction({
-                'Name': '/ProductCatalog2/Actions/Cart/DeleteCart.action'}).then(
-                success => {
-                    context.executeAction({
-                        'Name': '/ProductCatalog2/Actions/Cart/NaviTo_CartList.action'
-                    })
-                },
-                failure => {
-                    console.log(failure)
-                }
-            )
+            await context.executeAction({
+                'Name': '/ProductCatalog2/Actions/Cart/DeleteCart.action'
+            })
+            await context.executeAction({
+                'Name': '/ProductCatalog2/Actions/Cart/NaviTo_CartList.action'
+            })
 
         } else {
             console.log('User rejected')
         }
-    });
+             
+    } catch (e) {
+        console.error(e);
+    } finally {
+        console.timeEnd('CartDeleteConfirmation')
+        console.log('CartDeleteConfirmation end')
+    }
 }
