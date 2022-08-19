@@ -148,7 +148,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/ProductCatalog2/Actions/Cart/UpdateCartItem.action"
+				"OnPress": "/ProductCatalog2/Rules/Cart/ExecuteUpdateCartItem.js"
 			}
 		],
 		"_Name": "ActionBar1"
