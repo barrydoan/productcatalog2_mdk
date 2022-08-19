@@ -49,7 +49,7 @@
 				"Position": "Right",
 				"IsIconCircular": false,
 				"Visible": true,
-				"OnPress": "/ProductCatalog2/Actions/Cart/CreateCart.action"
+				"OnPress": "/ProductCatalog2/Rules/Cart/ExecuteCreateCart.js"
 			}
 		],
 		"_Name": "ActionBar1"
