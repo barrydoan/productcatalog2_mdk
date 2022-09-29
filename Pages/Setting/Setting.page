@@ -44,12 +44,6 @@
 					"_Name": "SectionFormCell0"
 				},
 				{
-					"Visible": true,
-					"EmptySection": {
-						"FooterVisible": false
-					},
-					"_Type": "Section.Type.FormCell",
-					"_Name": "SectionFormCell1",
 					"Controls": [
 						{
 							"_Type": "Control.Type.FormCell.Button",
@@ -58,8 +52,30 @@
 							"Title": "Upload log",
 							"TextAlignment": "center",
 							"OnPress": "/ProductCatalog2/Actions/Log/LogUpload.action"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton2",
+							"IsVisible": true,
+							"Title": "Blue ",
+							"TextAlignment": "center",
+							"OnPress": "/ProductCatalog2/Rules/Setting/SetBlueTheme.js"
+						},
+						{
+							"_Type": "Control.Type.FormCell.Button",
+							"_Name": "FormCellButton3",
+							"IsVisible": true,
+							"Title": "Default",
+							"TextAlignment": "center",
+							"OnPress": "/ProductCatalog2/Rules/Setting/SetDefaultTheme.js"
 						}
-					]
+					],
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell1"
 				}
 			]
 		}

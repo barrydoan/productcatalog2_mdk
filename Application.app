@@ -5,7 +5,7 @@
 	],
 	"OnWillUpdate": "/ProductCatalog2/Rules/OnWillUpdate.js",
 	"OnDidUpdate": "/ProductCatalog2/Actions/Service/InitializeOffline.action",
-	"Styles": "/ProductCatalog2/Styles/Styles.less",
+	"Styles": "/ProductCatalog2/Styles/BlueTheme.dark.less",
 	"Version": "/ProductCatalog2/Globals/AppDefinition_Version.global",
 	"Localization": "/ProductCatalog2/i18n/i18n.properties",
 	"_SchemaVersion": "6.2",
